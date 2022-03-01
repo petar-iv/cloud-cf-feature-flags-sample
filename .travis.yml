@@ -1,0 +1,29 @@
+language: go
+
+go:
+  - 1.17.x
+
+script:
+  # Linux i686 build
+  - CGO_ENABLED=0 GOARCH=386 GOOS=linux go build -o out/flags_migrator_linux_i686 migrator/cmd/main.go
+
+  # Linux x86-64 build
+  - CGO_ENABLED=0 GOARCH=amd64 GOOS=linux go build -o out/flags_migrator_linux_x86-64 migrator/cmd/main.go
+
+  # OSX build
+  - GOARCH=amd64 GOOS=darwin go build -o out/flags_migrator_osx migrator/cmd/main.go
+
+  # Windows x32 build
+  - GOARCH=386 GOOS=windows go build -o out/flags_migrator_win32.exe migrator/cmd/main.go
+
+  # Windows x64 build
+  - GOARCH=amd64 GOOS=windows go build -o out/flags_migrator_win64.exe migrator/cmd/main.go
+
+deploy:
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  file_glob: true
+  file: out/*
+  skip_cleanup: true
+  on:
+    tags: true
