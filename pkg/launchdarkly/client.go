@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/errors"
+	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/errors"
 )
 
 type ClientParams struct {

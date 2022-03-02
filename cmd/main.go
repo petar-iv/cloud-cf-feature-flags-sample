@@ -1,14 +1,14 @@
 package main
 
 import (
-	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/errors"
+	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/errors"
 	"log"
 	"strings"
 
-	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/conversion"
-	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/launchdarkly"
-	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/parameters"
-	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/sap"
+	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/conversion"
+	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/launchdarkly"
+	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/parameters"
+	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/sap"
 )
 
 func main() {

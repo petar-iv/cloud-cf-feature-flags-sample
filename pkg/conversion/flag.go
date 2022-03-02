@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/launchdarkly"
-	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/sap"
+	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/launchdarkly"
+	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/sap"
 )
 
 func ToLDFlag(sapFlag sap.Flag) launchdarkly.Flag {
