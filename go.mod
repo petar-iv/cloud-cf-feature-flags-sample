@@ -1,3 +1,3 @@
-module github.com/petar-iv/cloud-cf-feature-flags-sample
+module github.com/SAP-samples/cloud-cf-feature-flags-sample
 
 go 1.17

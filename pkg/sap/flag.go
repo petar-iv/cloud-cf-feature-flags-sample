@@ -5,8 +5,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/errors"
-	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/parameters"
+	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/errors"
+	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/parameters"
 )
 
 const (

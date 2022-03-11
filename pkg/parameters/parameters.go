@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/petar-iv/cloud-cf-feature-flags-sample/pkg/launchdarkly"
+	"github.com/SAP-samples/cloud-cf-feature-flags-sample/pkg/launchdarkly"
 )
 
 const (
